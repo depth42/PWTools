@@ -1,1 +1,1 @@
-# PWTools
+A small collection of tools we developed over the years at ProjectWizards as shown at our talk at Macoun 2016. 
