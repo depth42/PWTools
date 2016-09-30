@@ -1,0 +1,15 @@
+//
+// Prefix header for all source files of the 'PWFoundation' target in the 'PWFoundation' project.
+//
+
+// the standard libxml headers are by default configured to not use the thread-enabled variants of
+// configuration globals. As we generally need to be able to use XML capabilities on multiple threads, we
+// enable it for the whole PWFoundation.
+#define LIBXML_THREAD_ENABLED 1
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+    #import <PWFoundation/PWSDKAvailability.h>
+    #import <PWFoundation/PWTypes.h>
+#endif

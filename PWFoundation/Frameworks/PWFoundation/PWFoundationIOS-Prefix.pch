@@ -1,0 +1,17 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+// matches entry in Info.plist
+#define PWFRAMEWORK_BUNDLEIDENTIFIER @"net.projectwizards.PWFoundation"
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <CoreGraphics/CoreGraphics.h>
+    #import <CoreText/CoreText.h>
+    #import <CoreData/CoreData.h>
+    #import <PWFoundation/PWSDKAvailability.h>
+    #import <PWFoundation/PWTypes.h>
+#endif

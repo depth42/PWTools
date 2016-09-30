@@ -1,0 +1,31 @@
+//
+//  Debug.xcconfig
+//  PWSoftware
+//
+//  Created by Kai Brüning on 17.2.10.
+//
+//
+//  Project-level settings for Debug configuration
+
+#include "Shared.xcconfig"
+
+GCC_OPTIMIZATION_LEVEL = 0
+
+ONLY_ACTIVE_ARCH = YES
+
+COPY_PHASE_STRIP = NO
+
+ENABLE_TESTABILITY = YES
+
+// Application targets have by default GCC_SYMBOLS_PRIVATE_EXTERN = YES (that is, -fvisibility=hidden). With the modern
+// runtime, this setting affects the linker-visibilty of Objective-C classes, too (it doesn’t under 32 bit Mac OS).
+// To make dependent unit tests work, at least all Objective-C classes to be tested must be linker-visible.
+// On the other hand, making all symbols visible in production builds is not desirable. Therefore for starters
+// symbols are made visible in the debug build only. This of course disables unit test for release builds.
+GCC_SYMBOLS_PRIVATE_EXTERN = NO
+
+// Currently (Xcode 3.2.2 beta 2) the debugger has severe problems in the presence of inlined functions.
+// To work around this, we redefine NS_INLINE without the __attribute__((always_inline)) in debug builds.
+// Since optimization is off, nothing is inlined -> bingo.
+DEBUG_GCC_PREPROCESSOR_DEFINITIONS = $(SHARED_GCC_PREPROCESSOR_DEFINITIONS) NS_INLINE="static inline"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) $(DEBUG_GCC_PREPROCESSOR_DEFINITIONS)

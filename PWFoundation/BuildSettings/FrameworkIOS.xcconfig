@@ -1,0 +1,26 @@
+//
+//  FrameworkIOS.xcconfig
+//  PWSoftware
+//
+//  Created by Wolfgang Berberich on 2014-01-22.
+//
+//
+//  Default settings for static frameworks on IOS. Meant to be included at the target level.
+
+#include "BaseIOS.xcconfig"
+
+// Safeguard against Shared.xccondig
+// the hidpi setting is for OSX only.
+// When you build, verify that your @2x.png and .png images are all in the resource bundle
+COMBINE_HIDPI_IMAGES = NO
+
+// code signing required for frameworks on iOS8
+CODE_SIGN_IDENTITY = iPhone Developer
+
+// Deployment
+STRIP_STYLE = non-global
+SKIP_INSTALL = YES
+
+// Linking
+DYLIB_INSTALL_NAME_BASE = @rpath
+DEAD_CODE_STRIPPING = NO

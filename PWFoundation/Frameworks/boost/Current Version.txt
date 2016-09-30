@@ -1,0 +1,19 @@
+Version:     1.55.0 of November 11th, 2013 19:50 GMT
+Downloaded:  March 11th, 2014
+
+Previous versions:
+
+Version:     1.55.0 beta 1
+Downloaded:  November 11th, 2013
+
+Version:     1.54.0 of July 1st, 2013 17:10 GMT
+Downloaded:  August 5th, 2013
+
+Version:     1.53.0 of February 4th, 2013 18:29 GMT
+Downloaded:  May 21st, 2013
+
+Version:     1.52.0 of November 5th, 2012 16:05 GMT
+Downloaded:  December 19th, 2012
+
+Version:     1.49.0 of February 24th, 2012 21:20 GMT
+Downloaded:  June 28th, 2012

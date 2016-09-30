@@ -1,0 +1,23 @@
+//
+//  FrameworkOSX.xcconfig
+//  PWSoftware
+//
+//  Created by Kai Brüning on 17.2.10.
+//
+//
+//  Default settings for frameworks. Meant to be used at the target level.
+
+#include "BaseOSX.xcconfig"
+
+WRAPPER_EXTENSION = framework
+
+// This is the install path for frameworks which are meant to be embedded in an executable bundle.
+INSTALL_PATH = @rpath
+// Erase the search path settings inherited from the Shared config file as it is only needed for apps and not frameworks
+LD_RUNPATH_SEARCH_PATHS =
+
+// Version information for the first version of a framework.
+FRAMEWORK_VERSION = A
+DYLIB_COMPATIBILITY_VERSION = 1
+DYLIB_CURRENT_VERSION = 1
+

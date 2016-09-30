@@ -1,0 +1,20 @@
+//
+//  Application.xcconfig
+//  PWSoftware
+//
+//  Created by Kai Brüning on 17.2.10.
+//  Copyright 2010 ProjectWizards. All rights reserved.
+//
+//  Default settings for applications. Meant to be used at the target level.
+
+#include "BaseIOS.xcconfig"
+
+// avoid stripping of categories in static libraries during link time
+OTHER_LDFLAGS = -ObjC -all_load
+
+LIBRARY_SEARCH_PATHS = $(inherited) $(BUILT_PRODUCTS_DIR)
+
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon
+
+// Is needed so that actuals archives are created in archive-builds
+SKIP_INSTALL = NO

@@ -1,0 +1,23 @@
+//
+//  BaseOSX.xcconfig
+//  PWSoftware
+//
+//  Created by Wolfgang Berberich on 2014-01-22.
+//
+//
+//  Base plattform secific configuration for OSX. 
+//  These settings are shared by all our projects.
+//	Should be included in product config before any other
+//
+//
+
+// This setting is not neccessary because the OSX Default config setting already contains the valid acritectures
+// additionally an explicit setting breaks the run single test feature.
+//ARCHS = x86_64
+
+SDKROOT = macosx
+MACOSX_DEPLOYMENT_TARGET = 10.10
+
+// We do not want to combine high resolution artwork as we need to be able to access the individual images from MerlinWeb
+// to be delivered to a web browser
+COMBINE_HIDPI_IMAGES = NO

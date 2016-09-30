@@ -1,0 +1,31 @@
+//
+//  Release.xcconfig
+//  PWSoftware
+//
+//  Created by Kai Brüning on 17.2.10.
+//
+//
+//  Project-level settings for Release configuration
+
+#include "Shared.xcconfig"
+
+GCC_OPTIMIZATION_LEVEL = s
+
+ONLY_ACTIVE_ARCH = NO
+
+ENABLE_TESTABILITY = NO
+
+RELEASE_GCC_PREPROCESSOR_DEFINITIONS = $(SHARED_GCC_PREPROCESSOR_DEFINITIONS) RELEASE_BUILD=1 NS_BLOCK_ASSERTIONS=1 NDEBUG=1
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) $(RELEASE_GCC_PREPROCESSOR_DEFINITIONS)
+
+
+//GCC_GENERATE_DEBUGGING_SYMBOLS = NO
+//
+
+// Warnings which are switched off for release builds to avoid false positives.
+GCC_WARN_UNUSED_VARIABLE = NO   // Auto-removed debug code often leaves variables unused
+CLANG_WARN_UNREACHABLE_CODE = NO // Disabled debug options create dead code in release build
+
+SKIP_INSTALL = YES   // Default for all libs and frameworks. Makes sure libraries and frameworks are not archived separately. Shippable apps should redifine it to NO.
+
+DEPLOYMENT_POSTPROCESSING = YES

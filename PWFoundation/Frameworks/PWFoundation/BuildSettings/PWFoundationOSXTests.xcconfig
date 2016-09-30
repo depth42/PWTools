@@ -1,0 +1,18 @@
+//
+//  PWFoundationOSXTests.xcconfig
+//  PWFoundation
+//
+//  Created by Wolfgang Berberich on 2014-01-22.
+//
+//
+#include "../../BuildSettings/BaseOSX.xcconfig"
+
+PRODUCT_NAME = PWFoundationTests
+GCC_PREFIX_HEADER = PWFoundation_Prefix.pch
+INFOPLIST_FILE = Tests/Info.plist
+WRAPPER_EXTENSION = xctest
+
+FRAMEWORK_SEARCH_PATHS = $(inherited) $(DEVELOPER_FRAMEWORKS_DIR)
+
+PWFOUNDATION_HEADER_SEARCH_PATHS = ../../Frameworks/boost $(SDKROOT)/usr/include/libxml2 .
+HEADER_SEARCH_PATHS = $(inherited) $(PWFOUNDATION_HEADER_SEARCH_PATHS)

@@ -1,0 +1,25 @@
+//
+//  PWFoundation.xcconfig
+//  PWFoundation
+//
+//  Created by Kai Brüning on 1.3.10.
+//
+//
+#include "../../BuildSettings/FrameworkOSX.xcconfig"
+
+INFOPLIST_FILE = Info.plist
+PRODUCT_NAME = PWFoundation
+GCC_PREFIX_HEADER = PWFoundation_Prefix.pch
+
+// Note: the "." search path is needed to find #imports for "unicode/..."
+PWFOUNDATION_HEADER_SEARCH_PATHS = ../../Frameworks/boost $(SDKROOT)/usr/include/libxml2 .
+HEADER_SEARCH_PATHS = $(inherited) $(PWFOUNDATION_HEADER_SEARCH_PATHS)
+
+// Flags for libical
+OTHER_CFLAGS = $(inherited) -DHAVE_CONFIG_H -DPIC
+
+LIBRARY_SEARCH_PATHS   = $(SDKROOT)/usr/lib $(inherited) $(FRAMEWORK_LIBRARY_SEARCH_PATHS)
+FRAMEWORK_SEARCH_PATHS = $(FRAMEWORK_FRAMEWORK_SEARCH_PATHS)
+
+LD_DYLIB_INSTALL_NAME = $(DYLIB_INSTALL_NAME_BASE:standardizepath)/$(EXECUTABLE_PATH)
+

@@ -1,0 +1,13 @@
+//
+//  Application.xcconfig
+//  PWSoftware
+//
+//  Created by Kai Brüning on 17.2.10.
+//  Copyright 2010 ProjectWizards. All rights reserved.
+//
+//  Default settings for applications. Meant to be used at the target level.
+
+#include "BaseOSX.xcconfig"
+
+INSTALL_PATH = $(HOME)/Applications
+

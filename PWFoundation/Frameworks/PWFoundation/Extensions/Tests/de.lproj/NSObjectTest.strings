@@ -1,0 +1,11 @@
+/* 
+  NSObjectTest.strings
+  PWFoundation
+
+  Created by Frank Illenberger on 13.06.13.
+  Copyright (c) 2013 ProjectWizards. All rights reserved.
+*/
+
+"TestProtocol1.property.testProperty1"   = "Test prop 1 german";
+"property.testProperty2"                 = "Test prop 2 german";
+"TestClass2.property.testProperty4"      = "Test prop 4 german";

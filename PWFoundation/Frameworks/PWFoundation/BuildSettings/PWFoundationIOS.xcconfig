@@ -1,0 +1,19 @@
+//
+//  PWFoundationIOS.xcconfig
+//  PWFoundation
+//
+//  Created by Wolfgang Berberich on 2014-01-22.
+//
+//
+#include "../../BuildSettings/FrameworkIOS.xcconfig"
+
+PRODUCT_NAME = PWFoundation
+INFOPLIST_FILE = PWFoundationIOS-Info.plist
+GCC_PREFIX_HEADER = PWFoundationIOS-Prefix.pch
+
+// Build settings specific to this framework
+PWFOUNDATION_HEADER_SEARCH_PATHS = ../../Frameworks/boost $(SDKROOT)/usr/include/libxml2 .
+HEADER_SEARCH_PATHS = $(inherited) $(PWFOUNDATION_HEADER_SEARCH_PATHS)
+
+// Flags for libical
+OTHER_CFLAGS = $(inherited) -DHAVE_CONFIG_H -DPIC

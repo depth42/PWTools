@@ -1,0 +1,24 @@
+//
+//  BaseIOS.xcconfig
+//  PWSoftware
+//
+//  Created by Wolfgang Berberich on 2014-01-22.
+//
+//
+//  Base plattform secific configuration for IOS. 
+//  These settings are shared by all our projects.
+//	Should be included in product config before any other
+//
+// This setting is not neccessary because the IOS Default config setting already contains the valid acritectures
+// additionally an explicit setting breaks the run single test feature.
+//ARCHS = $(ARCHS_STANDARD_INCLUDING_64_BIT)
+
+SDKROOT = iphoneos
+IPHONEOS_DEPLOYMENT_TARGET = 9.1
+TARGETED_DEVICE_FAMILY = 1,2    // Universal: iPhone/iPad
+
+// is recommended with Xcode 5.1 but disabled on M3.OSX
+GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+
+// recommended setting in XCode 6.3
+GCC_NO_COMMON_BLOCKS = YES;

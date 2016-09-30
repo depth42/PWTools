@@ -1,0 +1,20 @@
+//
+//  PWFoundationIOSTests.xcconfig
+//  PWFoundation
+//
+//  Created by Wolfgang Berberich on 2014-01-22.
+//
+//
+#include "PWFoundationIOS.xcconfig"
+
+INFOPLIST_FILE = Tests/PWFoundationIOSTests-Info.plist
+WRAPPER_EXTENSION = xctest
+FRAMEWORK_SEARCH_PATHS = $(DEVELOPER_FRAMEWORKS_DIR) $(inherited)
+
+// avoid stripping of categories during link time
+OTHER_LDFLAGS = -ObjC -all_load
+
+// disable png compression in IOS tests because this is the same default behavior as OSX
+// and otherwise media digest values won't match across platforms.
+COMPRESS_PNG_FILES = NO
+STRIP_PNG_TEXT = NO
