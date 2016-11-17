@@ -39,6 +39,18 @@
 		0154B06E101A8B5000471118 /* NSNotificationCenter-PWDispatchExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0154B06C101A8B5000471118 /* NSNotificationCenter-PWDispatchExtensions.m */; };
 		0154B085101A8D3800471118 /* PWDispatchObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 0154B083101A8D3800471118 /* PWDispatchObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0154B086101A8D3800471118 /* PWDispatchObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 0154B084101A8D3800471118 /* PWDispatchObserver.m */; };
+		0169FE7B1DDDA050000B6865 /* PWAsyncLRUCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 0169FE771DDDA050000B6865 /* PWAsyncLRUCache.h */; };
+		0169FE7C1DDDA050000B6865 /* PWAsyncLRUCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 0169FE771DDDA050000B6865 /* PWAsyncLRUCache.h */; };
+		0169FE7D1DDDA050000B6865 /* PWAsyncLRUCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0169FE781DDDA050000B6865 /* PWAsyncLRUCache.mm */; };
+		0169FE7E1DDDA050000B6865 /* PWAsyncLRUCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0169FE781DDDA050000B6865 /* PWAsyncLRUCache.mm */; };
+		0169FE7F1DDDA050000B6865 /* PWLRUCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 0169FE791DDDA050000B6865 /* PWLRUCache.h */; };
+		0169FE801DDDA050000B6865 /* PWLRUCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 0169FE791DDDA050000B6865 /* PWLRUCache.h */; };
+		0169FE811DDDA050000B6865 /* PWLRUCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0169FE7A1DDDA050000B6865 /* PWLRUCache.mm */; };
+		0169FE821DDDA050000B6865 /* PWLRUCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0169FE7A1DDDA050000B6865 /* PWLRUCache.mm */; };
+		0169FE861DDDA117000B6865 /* PWAsyncLRUCacheTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0169FE841DDDA117000B6865 /* PWAsyncLRUCacheTest.m */; };
+		0169FE871DDDA117000B6865 /* PWAsyncLRUCacheTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0169FE841DDDA117000B6865 /* PWAsyncLRUCacheTest.m */; };
+		0169FE881DDDA117000B6865 /* PWLRUCacheTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0169FE851DDDA117000B6865 /* PWLRUCacheTest.m */; };
+		0169FE891DDDA117000B6865 /* PWLRUCacheTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0169FE851DDDA117000B6865 /* PWLRUCacheTest.m */; };
 		016F93E815B9BC650043B73C /* PWDispatchFIFOBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 016F93E615B9BC650043B73C /* PWDispatchFIFOBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		016F93E915B9BC650043B73C /* PWDispatchFIFOBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 016F93E715B9BC650043B73C /* PWDispatchFIFOBuffer.m */; };
 		016F93ED15B9BD4E0043B73C /* PWDispatchFIFOBufferTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 016F93EC15B9BD4E0043B73C /* PWDispatchFIFOBufferTest.m */; };
@@ -669,6 +681,12 @@
 		0154B06C101A8B5000471118 /* NSNotificationCenter-PWDispatchExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter-PWDispatchExtensions.m"; sourceTree = "<group>"; };
 		0154B083101A8D3800471118 /* PWDispatchObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWDispatchObserver.h; sourceTree = "<group>"; };
 		0154B084101A8D3800471118 /* PWDispatchObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWDispatchObserver.m; sourceTree = "<group>"; };
+		0169FE771DDDA050000B6865 /* PWAsyncLRUCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWAsyncLRUCache.h; sourceTree = "<group>"; };
+		0169FE781DDDA050000B6865 /* PWAsyncLRUCache.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PWAsyncLRUCache.mm; sourceTree = "<group>"; };
+		0169FE791DDDA050000B6865 /* PWLRUCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWLRUCache.h; sourceTree = "<group>"; };
+		0169FE7A1DDDA050000B6865 /* PWLRUCache.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PWLRUCache.mm; sourceTree = "<group>"; };
+		0169FE841DDDA117000B6865 /* PWAsyncLRUCacheTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWAsyncLRUCacheTest.m; sourceTree = "<group>"; };
+		0169FE851DDDA117000B6865 /* PWLRUCacheTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWLRUCacheTest.m; sourceTree = "<group>"; };
 		016F93E615B9BC650043B73C /* PWDispatchFIFOBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWDispatchFIFOBuffer.h; sourceTree = "<group>"; };
 		016F93E715B9BC650043B73C /* PWDispatchFIFOBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWDispatchFIFOBuffer.m; sourceTree = "<group>"; };
 		016F93EB15B9BD4E0043B73C /* PWDispatchFIFOBufferTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWDispatchFIFOBufferTest.h; sourceTree = "<group>"; };
@@ -1021,6 +1039,15 @@
 			name = BuildSettings;
 			path = ../../BuildSettings;
 			sourceTree = SOURCE_ROOT;
+		};
+		0169FE831DDDA102000B6865 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0169FE851DDDA117000B6865 /* PWLRUCacheTest.m */,
+				0169FE841DDDA117000B6865 /* PWAsyncLRUCacheTest.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
 		};
 		0170D0C81D9C033400A5D13A /* Localisation */ = {
 			isa = PBXGroup;
@@ -1454,6 +1481,11 @@
 			children = (
 				2AC0579D11B6C4910027FE60 /* PWOrderedDictionary.h */,
 				2AC0579E11B6C4910027FE60 /* PWOrderedDictionary.m */,
+				0169FE791DDDA050000B6865 /* PWLRUCache.h */,
+				0169FE7A1DDDA050000B6865 /* PWLRUCache.mm */,
+				0169FE771DDDA050000B6865 /* PWAsyncLRUCache.h */,
+				0169FE781DDDA050000B6865 /* PWAsyncLRUCache.mm */,
+				0169FE831DDDA102000B6865 /* Tests */,
 			);
 			path = DataStructures;
 			sourceTree = "<group>";
@@ -1557,6 +1589,7 @@
 				0170D0DC1D9C033400A5D13A /* PWStringLocalizing.h in Headers */,
 				2A11A1F9119555A900F47864 /* PWISODateFormatter.h in Headers */,
 				2AC0579F11B6C4910027FE60 /* PWOrderedDictionary.h in Headers */,
+				0169FE7F1DDDA050000B6865 /* PWLRUCache.h in Headers */,
 				2AAA14C611B7D916009AC25B /* PWTypes.h in Headers */,
 				2A4CD66D11DCE3B1001743A1 /* NSFormatter-PWExtensions.h in Headers */,
 				2AFE2A3A1212A294003B09D1 /* PWEnumerable.h in Headers */,
@@ -1571,6 +1604,7 @@
 				0170D0BD1D9C028900A5D13A /* PWErrors.h in Headers */,
 				E12433771BF5D1BB00FE6ADC /* NSPropertyListSerialization-PWExtensions.h in Headers */,
 				01047AB818D0A089002CA19D /* modp_b64w_data.h in Headers */,
+				0169FE7B1DDDA050000B6865 /* PWAsyncLRUCache.h in Headers */,
 				01047AB618D0A089002CA19D /* modp_b64_data.h in Headers */,
 				0105C05412FC4D64009D2489 /* PWPListCoding.h in Headers */,
 				E5FA73E0133B8CE00060B807 /* PWNumberWithUnitFormatter.h in Headers */,
@@ -1640,6 +1674,7 @@
 				CDA2B0621963168100C0E6B0 /* NSMutableString-PWExtensions.h in Headers */,
 				CDA2B0641963168100C0E6B0 /* NSString-PWExtensions.h in Headers */,
 				CDA2B0651963168100C0E6B0 /* NSTimer-PWExtensions.h in Headers */,
+				0169FE801DDDA050000B6865 /* PWLRUCache.h in Headers */,
 				CDA2B0681963168100C0E6B0 /* NSURL-PWExtensions.h in Headers */,
 				CDA2B06D1963168100C0E6B0 /* NSHashTable-PWExtensions.h in Headers */,
 				CDA2B0711963168100C0E6B0 /* PWDispatchObserver-Private.h in Headers */,
@@ -1705,6 +1740,7 @@
 				CDA2B14C1963168100C0E6B0 /* NSNull-PWExtensions.h in Headers */,
 				CDA2B14E1963168100C0E6B0 /* NSThread-PWExtensions.h in Headers */,
 				CDA2B1531963168100C0E6B0 /* PWDispatchMainQueue.h in Headers */,
+				0169FE7C1DDDA050000B6865 /* PWAsyncLRUCache.h in Headers */,
 				CDA2B1541963168100C0E6B0 /* PWDispatchFoundationTimer.h in Headers */,
 				CDA2B1561963168100C0E6B0 /* PWDispatchTimer-Private.h in Headers */,
 				CDA2B1571963168100C0E6B0 /* PWDispatchQueue-Private.h in Headers */,
@@ -2020,8 +2056,10 @@
 				01ED28E8113FC9BC0085E8EF /* PWCurrencyFormatter.m in Sources */,
 				017350B51147FF560029D233 /* PWBlockFormatter.m in Sources */,
 				2A48CEEE115B9F9600F53805 /* NSDateFormatter-PWExtensions.m in Sources */,
+				0169FE811DDDA050000B6865 /* PWLRUCache.mm in Sources */,
 				2AC057A011B6C4910027FE60 /* PWOrderedDictionary.m in Sources */,
 				2A4CD66E11DCE3B1001743A1 /* NSFormatter-PWExtensions.m in Sources */,
+				0169FE7D1DDDA050000B6865 /* PWAsyncLRUCache.mm in Sources */,
 				01422330123648DC00FE805C /* PWWeakObjectWrapper.m in Sources */,
 				0170D16B1D9C18E800A5D13A /* PWAppKitDebugOptionGroup.m in Sources */,
 				01A9B280124B55AC0093C91C /* PWISOTimeFormatter.m in Sources */,
@@ -2131,10 +2169,12 @@
 				CDA2B2911963168100C0E6B0 /* PWFallbackFormatter.m in Sources */,
 				CDA2B2921963168100C0E6B0 /* PWDateFormatter.m in Sources */,
 				CDA2B2931963168100C0E6B0 /* asc85.c in Sources */,
+				0169FE821DDDA050000B6865 /* PWLRUCache.mm in Sources */,
 				CDA2B2951963168100C0E6B0 /* PWValueTypes.m in Sources */,
 				CDA2B2981963168100C0E6B0 /* (null) in Sources */,
 				2A129D901AB972D9005F01BB /* PWAsserts.m in Sources */,
 				CDA2B2BE1963168100C0E6B0 /* modp_b64w.c in Sources */,
+				0169FE7E1DDDA050000B6865 /* PWAsyncLRUCache.mm in Sources */,
 				CDA2B2C11963168100C0E6B0 /* PWNumberWithUnitFormatter.m in Sources */,
 				CDA2B2C21963168100C0E6B0 /* NSNull-PWExtensions.m in Sources */,
 				CDA2B2C31963168100C0E6B0 /* NSThread-PWExtensions.m in Sources */,
@@ -2183,11 +2223,13 @@
 				2AC20D4E1B976BED005B9B2D /* PWDispatchQueueingHelperTest.m in Sources */,
 				CD58725F1BED1E6E001BD692 /* NSError-PWExtensionsTests.m in Sources */,
 				CD301D4B188997B600D05EFD /* PWTypesTest.m in Sources */,
+				0169FE871DDDA117000B6865 /* PWAsyncLRUCacheTest.m in Sources */,
 				CDA39A2E188D29B3008AE28F /* PWDispatchFIFOBufferTest.m in Sources */,
 				CD301D441889979C00D05EFD /* PWValueGroupTest.m in Sources */,
 				CDDD3D8A18894EEF000B8D2D /* NSNumber-PWExtensionsTest.m in Sources */,
 				CDDD3D9018894EEF000B8D2D /* NSObject-PWExtensionsTest.m in Sources */,
 				CD301D46188997A400D05EFD /* PWEnumFormatterTest.m in Sources */,
+				0169FE891DDDA117000B6865 /* PWLRUCacheTest.m in Sources */,
 				CDDD3D9418894EEF000B8D2D /* PWOrderedDictionaryTest.m in Sources */,
 				CD223C2B188D4E4200CDBFBA /* PWISODateFormatterTest.m in Sources */,
 				CDE2A36B1886AD5F00BDDFE7 /* NSData-PWExtensionsTest.m in Sources */,
@@ -2218,6 +2260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1E42AE20FCECA7E004598EE /* NSNumber-PWExtensionsTest.m in Sources */,
+				0169FE881DDDA117000B6865 /* PWLRUCacheTest.m in Sources */,
 				E140F0E70FCFCCB800EC25F3 /* NSBundle-PWExtensionsTest.m in Sources */,
 				2AC97AC50FF524EE000C71FE /* PWDispatchTest.m in Sources */,
 				2AF1041C1B979F68000D6EAB /* PWDispatchQueueGraphTest.m in Sources */,
@@ -2235,6 +2278,7 @@
 				2AC057A811B6ED450027FE60 /* PWOrderedDictionaryTest.m in Sources */,
 				0191EDE611C7C80700FC2463 /* NSObject-PWExtensionsTest.m in Sources */,
 				01A9B2A0124B5C610093C91C /* PWISOTimeFormatterTest.m in Sources */,
+				0169FE861DDDA117000B6865 /* PWAsyncLRUCacheTest.m in Sources */,
 				E12FC975192368E8006285FF /* PWDateFormatterTest.m in Sources */,
 				0175C69A126F400A00891AE1 /* NSArray-PWExtensionsTest.m in Sources */,
 				018C92C6128976A5005B85E4 /* PWValueTypeTestObject.m in Sources */,
